@@ -1,17 +1,22 @@
 # Perguntas.Dev
 
-![Imagem do Projeto](link-da-imagem-aqui)
+
 
 ## Descrição
 
 O aplicativo é um quiz em Flutter que permite ao usuário escolher um tema e responder a perguntas relacionadas a esse tema. Ele é composto por três partes principais: a tela inicial (`HomePage`), a lógica de controle do quiz (`_PerguntaAppState`), e as telas de exibição das perguntas e resultados (`Questionario` e `Resultado`).
 
 ## Principais Funcionalidades
-
-- **HomePage (`home_page.dart`):**
+<details>
+    <summary><b>HomePage (`home_page.dart`):</b></summary>
+    <img src="https://github.com/user-attachments/assets/e7c206f1-c944-46ef-b773-135621c3467f" alt="HomePage" width="200px">
+  
   - **Função:** Serve como a tela inicial do aplicativo onde o usuário escolhe o tema das perguntas.
   - **Funcionamento:** Exibe três botões, cada um representando um tema diferente. Quando o usuário clica em um botão, a função `selecionarTema` é chamada com o tema correspondente.
-- **Classe `_PerguntaAppState` (`main.dart`):**
+</details>
+<details>
+    <summary><b>Classe `_PerguntaAppState` (`main.dart`):</b></summary>
+  
   - **Função:** Gerencia o estado do aplicativo, incluindo a seleção do tema, a pontuação, e a navegação entre as perguntas.
   - **Atributos Principais:**
     - `_temaSelecionado`: Armazena o tema atualmente selecionado.
@@ -24,19 +29,29 @@ O aplicativo é um quiz em Flutter que permite ao usuário escolher um tema e re
     - `_reiniciarQuestionario()`: Reinicia o questionário e retorna à tela de seleção de tema.
   - **Método `build(BuildContext context)`:**
     - Define a interface do usuário. Dependendo do estado do aplicativo (`_temaSelecionado`), exibe a `HomePage` ou o conteúdo do quiz (`perguntas` e `resultados`).
-- **Questionário e Resultado:**
+</details> 
+<details>
+    <summary><b>Questionário e Resultado:</b></summary>
+  <img src="https://github.com/user-attachments/assets/0fd371f5-b9fb-46e8-a0fd-ef3e90e88bb3" alt="Questionário" width="200px">
+  <img src="https://github.com/user-attachments/assets/8c2d5d55-494a-464f-9a22-255d6daf0557" alt="Resultado" width="200px">
+  
   - **Questionario** (`questionario.dart`): Exibe a pergunta atual e as opções de resposta. Chama a função responder ao clicar em uma resposta.
   - **Resultado** (`resultado.dart`): Mostra a pontuação final do usuário e um botão para reiniciar o quiz. Chama a função reiniciarQuestionario quando o botão é clicado.
+  
+</details>  
 
 
 
-<img src="https://racine-fellipe.imgbb.com/" width="300">
+
+## Fluxo de Execução:
+![Fluxo de Execução](https://github.com/user-attachments/assets/356aaab8-b01e-4665-8fb0-fc6dfead108e)
+
+
 
 ## Tecnologias Utilizadas
 
 - **Flutter**: Framework para desenvolvimento de aplicativos móveis.
 - **Dart**: Linguagem de programação usada com Flutter.
-- **Outras Bibliotecas**: Liste aqui outras bibliotecas ou frameworks utilizados no projeto.
 
 ## Como Usar
 
